@@ -25,3 +25,6 @@ This will need to be done for the remaining 3 signal heads.
 The 5 infra red sensors will be attched to pins A0 to A4 and grounded to the gnd rail on the shield. these will uses address 3002 to 3006.
 
 There is a bit message returned to jmri with address 3001 which i use for feedback on the turnout butnot a micro switch in this case. this only uses the arduino code to create the message.
+
+
+Hopefully it can help you to learn how to do
