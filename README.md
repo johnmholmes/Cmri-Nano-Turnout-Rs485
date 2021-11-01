@@ -16,7 +16,7 @@ In this exsample the node address will be 3 but can be  changed to any value not
 
 The Arduino Nano is simulating a Cmri SMINI node which can have 24 imputs and 48 outputs for Jmri use.
 
-The TMC 2 asspect signals use a 5v commom positive to get the power to the leds and that goes onto the 5volt rail 4 off on the shield.
+The TMC 2 asspect signals use a 5v - 12v commom anode to get the power to the leds and that goes onto the 5volt rail in my case 4 off on the shield.
 The remaining 8 wires go to the Arduino Nano pins 4 to 11.
 
 In Jmri you will need 1 turnout to be created to use 1 bit steady state with address of 3001 in this case.
