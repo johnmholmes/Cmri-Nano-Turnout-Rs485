@@ -5,6 +5,7 @@
   the servo has been moved
   also will control 8 off signal leds
   it will also read 5 sensors/switchs
+  code uses chris sharps slow motion servo move
 */
 #include <CMRI.h>
 #include <Servo.h>
@@ -81,12 +82,12 @@ void loop() {
   turnout1 = (cmri.get_bit(0)); //turnout 3001 jmri address
 
   if (turnout1 == 1 && t1state == 0) {
-    turnout1Target = turnout1ThrownPosition;   //  changed to set the target
+    turnout1Target = turnout1ThrownPosition;   
     t1state = 1;
     cmri.set_bit(0, HIGH); //3001 jmri address output
   }
   if (turnout1 == 0 && t1state == 1) {
-    turnout1Target = turnout1ClosedPosition;    //  changed to set the target
+    turnout1Target = turnout1ClosedPosition;    
     t1state = 0;
     cmri.set_bit(0, LOW);
   }
@@ -115,5 +116,5 @@ void loop() {
       if (turnout1Position > turnout1Target) turnout1Position--;
       turnOut1.write(turnout1Position);
     }
-  } // end of setting turnout1
+  } // 
 }
