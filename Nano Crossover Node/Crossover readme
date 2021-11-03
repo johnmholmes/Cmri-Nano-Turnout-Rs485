@@ -1,3 +1,4 @@
 This will be very simular to the single turnout node. 
 But will use pin 2 for turnout 1 and pin 3 for turnout 2,
 It will control 6 signal heads in JMRI and again use the bi-directional TTl to RS485 module.
+The code will be added in the next day or so after further testing on the layout.
