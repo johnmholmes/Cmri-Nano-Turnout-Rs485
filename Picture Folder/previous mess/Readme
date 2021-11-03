@@ -1,0 +1,1 @@
+This shows the original setup for controlling 16 servos and 46 sensors this worked ok but i was not happy with it. so decided to change to local nodes, which will control the 1 or 2 servos maxium and hopefully will give more reliabilty.
