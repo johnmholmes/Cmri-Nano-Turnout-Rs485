@@ -16,14 +16,12 @@
 // pin 9 //  DS1 dock siding occuppied 5007
 // pin 10 // PL1 peel platform 1 occuppied 5008
 // pin 11 // PL2 peel platform 2 occuppied 5509
-// pin 12 // not used
+// pin 12 // D2DS dock platform 2 to siding         5005
 // pin 13 // not used
 // pin A0 // D1P1 dock platform 1 to peel 1 switch  5001
 // pin A1 // D1P2 dock platform 1 to peel 2         5002
 // pin A2 // D2P1 dock platform 2 to peel 1         5003
 // pin A3 // D2P2 dock platform 2 to peel 2         5004
-// pin A4 // D2DS dock platform 2 to siding         5005
-
 
 #include <CMRI.h>
 
@@ -45,10 +43,6 @@
 #define D2P1 A2     //5003  
 #define D2P2 A3     //5004
 #define D2DS 12     //5005  
-
-
-
-
 
 CMRI cmri(CMRI_ADDR, 24, 48); // defaults to a SMINI with address 0. SMINI = 24 inputs, 48 outputs
 ////////////////////////////////////////////////////////////////////////////////////////////to be changed/////////////////////////////////
