@@ -2,9 +2,9 @@
 // pins 0 , 1  are used to control the crmi bus leaving 18 possible devices
 //dock platform 1 has 2 routes avaiable
 //dock platform 2 has 3 routes avaiable
-//5 switches required 7 leds for turnouts 2 leds for block detection
+//5 switches required 7 leds for turnouts 3 leds for block detection
 //turnouts leds required t1 2 leds, t2 1 led, t3 2 leds, t4 2 leds 
-//block detection leds required 2 red
+//block detection leds required 3 red
 
 //      MIMIC PANEL LEDS
 // pin 3 //  T1C peel platform 1  5001
