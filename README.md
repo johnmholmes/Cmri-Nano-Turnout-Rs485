@@ -2,13 +2,14 @@
 
 The original idea was to create many reposatories with different Nodes to show these in use, 
 
-but i have decided maybe just keep one reposatory with diferent folders show exsamples for usages
+but i have decided maybe just keep one reposatory with diferent folders showing examples for usages
 of the units.
 
-The 1st complete folder is the single turnout Node.
+there are now 3 folders containing 3 different Nodes avaiable
 
-The 2nd folder will be the crossover Node.
+1.Single turnout with 4 signal heads and 5 sensors on a Nano
 
-The 3rd folder will be a picture folde.
+2.Crossover turnouts 6 signal head and 4 sensors on a Nano
 
-The 4th folder will be a simple mimic panel.
+3.First Mimic panel controls 5 routes in JMRI and has 3 block occupancy leds and 7 leds showing 
+the turnout position
