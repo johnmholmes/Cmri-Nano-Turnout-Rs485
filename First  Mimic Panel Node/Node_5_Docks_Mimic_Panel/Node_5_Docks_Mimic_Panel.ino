@@ -25,7 +25,6 @@
 
 #include <CMRI.h>
 
-
 #define CMRI_ADDR 5
 //willaston mimic panel leds
 #define T1C 3       //jmri address 5001 led 6 leds for turn outs
@@ -90,7 +89,5 @@ void loop() {
   cmri.set_bit(2, !digitalRead(A2)); //jmri 5003
   cmri.set_bit(3, !digitalRead(A3)); //jmri 5004
   cmri.set_bit(4, !digitalRead(12)); //jmri 5005
-
-  
 
 }
