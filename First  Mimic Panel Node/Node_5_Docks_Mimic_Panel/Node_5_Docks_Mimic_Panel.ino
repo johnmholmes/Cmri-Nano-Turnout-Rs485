@@ -26,7 +26,7 @@
 #include <CMRI.h>
 
 #define CMRI_ADDR 5
-//willaston mimic panel leds
+//Docks mimic panel leds
 #define T1C 3       //jmri address 5001 led 6 leds for turn outs
 #define T1T 4       //5002
 #define T2T 5       //5003
