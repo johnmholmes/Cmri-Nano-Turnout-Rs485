@@ -7,19 +7,14 @@ and again use the bi-directional TTl to RS485 module.
 The code uses address 8 in this sketch
 
 In JMRI settings
-
 Turnout 1 use address 8001
-
 Turnout 2 use address 8002
-
 Led 1 use address 8003
 
 Led 12 use address 8014
 
 Turnout1 feed back use address 8001
-
 Turnout2 feed back use address 8002
-
 Sensor1 use address 8003
 
 Sensor4 use address 8007
