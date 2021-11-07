@@ -5,7 +5,7 @@
   the servo has been moved
   also will control 8 off signal leds
   it will also read 5 sensors/switchs
-  Code uses some of Chris Sharps code to add slow motion servo motion
+  Code uses some of Chris Sharps code to add slow motion servo.
 */
 #include <CMRI.h>
 #include <Servo.h>
