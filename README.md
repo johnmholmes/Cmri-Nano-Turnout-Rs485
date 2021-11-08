@@ -5,11 +5,13 @@ The original idea was to create many reposatories with different Nodes to show t
 but i have decided maybe just keep one reposatory with diferent folders showing examples for usages
 of the units.
 
-there are now 3 folders containing 3 different Nodes avaiable
+there are now 3 folders containing 3 different Nodes avaiable.
 
-1.Single turnout with 4 signal heads and 5 sensors on a Nano
+1. Single turnout with 4 signal heads and 5 sensors on a Nano.
 
-2.Crossover turnouts 6 signal head and 4 sensors on a Nano
+2. Crossover turnouts 6 signal head and 4 sensors on a Nano.
 
-3.First Mimic panel controls 5 routes in JMRI and has 3 block occupancy leds and 7 leds showing 
-the turnout position
+3. First Mimic panel controls 5 routes in JMRI and has 3 block occupancy leds and 7 leds showing 
+the turnout position.
+
+4. I have also now decided to add some python scriptss i use to add some automation to thelayout.
