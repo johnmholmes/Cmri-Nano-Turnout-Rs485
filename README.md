@@ -14,4 +14,4 @@ there are now 3 folders containing 3 different Nodes avaiable.
 3. First Mimic panel controls 5 routes in JMRI and has 3 block occupancy leds and 7 leds showing 
 the turnout position.
 
-4. I have also now decided to add some python scriptss i use to add some automation to thelayout.
+4. I have also now decided to add some python scripts i use to add some automation to the layout.
