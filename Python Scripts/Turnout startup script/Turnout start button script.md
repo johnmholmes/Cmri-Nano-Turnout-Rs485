@@ -1,0 +1,1 @@
+After starting JMRI and loading the panel i use to get all the system setup i then use a button setup on the JMRI start page. This then runs the turnout start skript to set all the turnouts to closed before starting running the layout.
