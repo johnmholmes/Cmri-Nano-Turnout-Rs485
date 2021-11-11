@@ -41,7 +41,7 @@ void setup() {
   pinMode (PL1, OUTPUT);  
   pinMode (PL2, OUTPUT);  
 
-  //willaston routes switches
+  //Dock Route switches
   pinMode (D1P1, INPUT_PULLUP);
   pinMode (D1P2, INPUT_PULLUP);
   pinMode (D2P1, INPUT_PULLUP);
