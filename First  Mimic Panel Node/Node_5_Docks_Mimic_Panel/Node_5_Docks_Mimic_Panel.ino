@@ -6,64 +6,47 @@
 //turnouts leds required t1 2 leds, t2 1 led, t3 2 leds, t4 2 leds 
 //block detection leds required 3 red
 
-//      MIMIC PANEL LEDS
-// pin 3 //  T1C peel platform 1  5001
-// pin 4 //  T1T peel platform 2  5002
-// pin 5 //  T2T Dock approach    5003
-// pin 6 //  T3C dock platform 1  5004
-// pin 7 //  T3T dock platform 2  5005
-// pin 8 //  T4C dock siding      5006
-// pin 9 //  DS1 dock siding occuppied 5007
-// pin 10 // PL1 peel platform 1 occuppied 5008
-// pin 11 // PL2 peel platform 2 occuppied 5509
-// pin 12 // D2DS dock platform 2 to siding         5005
-// pin 13 // not used
-// pin A0 // D1P1 dock platform 1 to peel 1 switch  5001
-// pin A1 // D1P2 dock platform 1 to peel 2         5002
-// pin A2 // D2P1 dock platform 2 to peel 1         5003
-// pin A3 // D2P2 dock platform 2 to peel 2         5004
-
 #include <CMRI.h>
 
 #define CMRI_ADDR 5
 //Docks mimic panel leds
-#define T1C 3       //jmri address 5001 led 6 leds for turn outs
-#define T1T 4       //5002
-#define T2T 5       //5003
-#define T3C 6       //5004
-#define T3T 7       //5005
-#define T4C 8       //5006
-#define DS1 9       //5007 block occuppied led 3 leds for block detection
-#define PL1 10      //5008
-#define PL2 11      //5009
+#define T1C 3       //5001 T1C peel platform 1
+#define T1T 4       //5002 T1T peel platform 2
+#define T2T 5       //5003 T2T Dock approach 
+#define T3C 6       //5004 T3C dock platform 1
+#define T3T 7       //5005 T3T dock platform 2 
+#define T4C 8       //5006 T4C dock siding 
+#define DS1 9       //5007 DS1 dock siding occuppied
+#define PL1 10      //5008 PL1 peel platform 1 occuppied
+#define PL2 11      //5009 PL2 peel platform 2 occuppied
 // pin 12 and 13 not used
-#define D1P1 A0     //5001 
-#define D1P2 A1     //5002  
-#define D2P1 A2     //5003  
-#define D2P2 A3     //5004
-#define D2DS 12     //5005  
+#define D1P1 A0     //5001 D1P1 dock platform 1 to peel 1 
+#define D1P2 A1     //5002 D1P2 dock platform 1 to peel 2 
+#define D2P1 A2     //5003 D2P1 dock platform 2 to peel 1  
+#define D2P2 A3     //5004 D2P2 dock platform 2 to peel 2
+#define D2DS 12     //5005 D2DS dock platform 2 to siding
 
 CMRI cmri(CMRI_ADDR, 24, 48); // defaults to a SMINI with address 0. SMINI = 24 inputs, 48 outputs
-////////////////////////////////////////////////////////////////////////////////////////////to be changed/////////////////////////////////
+
 void setup() {
 
-  //   mimic led setup
-  pinMode (T1C, OUTPUT);  //5001
-  pinMode (T1T, OUTPUT);  //5002
-  pinMode (T2T, OUTPUT);  //5003
-  pinMode (T3C, OUTPUT);  //5004
-  pinMode (T3T, OUTPUT);  //5005
-  pinMode (T4C, OUTPUT);  //5006
-  pinMode (DS1, OUTPUT);  //5007
-  pinMode (PL1, OUTPUT);  //5008
-  pinMode (PL2, OUTPUT);  //5009
+  //mimic led setup
+  pinMode (T1C, OUTPUT);  
+  pinMode (T1T, OUTPUT);  
+  pinMode (T2T, OUTPUT);  
+  pinMode (T3C, OUTPUT);  
+  pinMode (T3T, OUTPUT);  
+  pinMode (T4C, OUTPUT);  
+  pinMode (DS1, OUTPUT);  
+  pinMode (PL1, OUTPUT);  
+  pinMode (PL2, OUTPUT);  
 
-  //willaston platform 1 routes
-  pinMode (D1P1, INPUT_PULLUP);// peel 1  5001
-  pinMode (D1P2, INPUT_PULLUP);// peel 2  5002
-  pinMode (D2P1, INPUT_PULLUP);// peel 1  5003
-  pinMode (D2P2, INPUT_PULLUP);// peel 2  5004
-  pinMode (D2DS, INPUT_PULLUP);// peel 2  5005
+  //willaston routes switches
+  pinMode (D1P1, INPUT_PULLUP);
+  pinMode (D1P2, INPUT_PULLUP);
+  pinMode (D2P1, INPUT_PULLUP);
+  pinMode (D2P2, INPUT_PULLUP);
+  pinMode (D2DS, INPUT_PULLUP);
 
   Serial.begin(9600);
 }
