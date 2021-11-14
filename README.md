@@ -15,3 +15,5 @@ there are now 3 folders containing 3 different Nodes avaiable.
 the turnout position.
 
 4. I have also now decided to add some python scripts i use to add some automation to the layout.
+
+5. I have now added the 2nd Mimic panel which is based on a Arduino Mega but still uses the same RS485 unit.
