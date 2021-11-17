@@ -1,4 +1,4 @@
-# Cmri using arduino Nano's and the Bi-directional TTL to RS485 modules
+# A group of various codes for use with a  model layout that uses Jmri and Cmri
 
 The original idea was to create many reposatories with different Nodes to show these in use, these codes will also work if the nodes are connected 
 to the pc via a usb cable.
