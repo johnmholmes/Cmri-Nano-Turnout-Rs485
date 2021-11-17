@@ -1,6 +1,6 @@
 # Cmri using arduino Nano's and the Bi-directional TTL to RS485 modules
 
-The original idea was to create many reposatories with different Nodes to show these in use, these codes will also work if the nodes are connect 
+The original idea was to create many reposatories with different Nodes to show these in use, these codes will also work if the nodes are connected 
 to the pc via a usb cable.
 
 but i have decided maybe just keep one reposatory with diferent folders showing examples for usages
