@@ -1,20 +1,35 @@
 # A group of various codes for use with a  model layout that uses Jmri and Cmri
+When i first created this repository it was going to be for 1 peice of code for use on my layout 
+and for me to learn how to uswe github.
 
-The original idea was to create many reposatories with different Nodes to show these in use, these codes will also work if the nodes are connected 
-to the pc via a usb cable.
+But i have decided that is a good place to keep all the codes i use on the layout which is still
+under construction, its about 3/4 complete and my ideas have changed quite a bit since i started it.
 
-but i have decided maybe just keep one reposatory with diferent folders showing examples for usages
-of the units.
+Atfer watching Rob's Youtube channel "little wicket" it got me started into a hobby i had not 
+done for about 27 years.
 
-there are now 4 folders containing 4 different Nodes avaiable.
+I had been learning Python for another hobby project which was a Marine aquarium controller, which once
+was completed i had a few spare arduino's laying around the house which i had been messing about with as well.
 
-1. Single turnout with 4 signal heads and 5 sensors on a Nano.
+After building the original version of Dcc++ i soon got hooked on expanding the size of the layout. As i had found
+adapting the many variations of code around the internet.
 
-2. Crossover turnouts 6 signal head and 4 sensors on a Nano.
+After moving away from my original plan of keeping the electronics all in one place, which i wish i had not already built 
+a large section of it. The 24 foot by 20 foot layout in the loft of the house. I decided to start building smaller stand 
+alone nodes and putting them closer to the turnouts and signals, This through up a issue after following the Rs485 video 
+that Rob had done quite a few of the cheap ebay units start to be unreliable. This set me down the road of looking for a 
+different Rs485 module which i did find on the internet but it came with very little information how to use it. 
+After some experementing i found that i did not need to use the Auto485 Library as per Robs video and also i only
+needed 2 pins on the arduino instead of 3
 
-3. First Mimic panel controls 5 routes in JMRI and has 3 block occupancy leds and 7 leds showing 
-the turnout position.
+So far i have now added 2 versions of turnout and signal and infrared sensors code both based on Nano's
 
-4. I have also now decided to add some python scripts i use to add some automation to the layout.
+Also i have added 2 versions of mimic panels 1 nano and 1 mega based
 
-5. I have now added the 2nd Mimic panel which is based on a Arduino Mega but still uses the same RS485 unit.
+Also i have added some python scripts for use in jmri as shown by Rob but this code will run more locomotives
+this shows how to set turnouts via routes and waits for the other trains to get to a certain point on the layou before
+others can proceed.
+
+Hopefully you can adapt the codes for use on your own layouts
+
+
