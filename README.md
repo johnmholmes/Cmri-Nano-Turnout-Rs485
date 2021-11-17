@@ -1,6 +1,6 @@
 # A group of various codes for use with a  model layout that uses Jmri and Cmri
 When i first created this repository it was going to be for 1 peice of code for use on my layout 
-and for me to learn how to uswe github.
+and for me to learn how to use github.
 
 But i have decided that is a good place to keep all the codes i use on the layout which is still
 under construction, its about 3/4 complete and my ideas have changed quite a bit since i started it.
