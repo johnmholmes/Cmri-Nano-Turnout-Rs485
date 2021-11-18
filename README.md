@@ -1,4 +1,4 @@
-# A group of various codes for use with a  model layout that uses Jmri and Cmri
+# A group of various codes for use with a  model layout that uses Jmri and Cmri and Dcc++Ex
 When i first created this repository it was going to be for 1 peice of code for use on my layout 
 and for me to learn how to use github.
 
