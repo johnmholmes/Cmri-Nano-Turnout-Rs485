@@ -8,19 +8,31 @@ We also have a switch on pin 22 to start this to only run 1 time
 EXRAIL
 
 START(20)
+
 SENDLOCO(4,20)
+
 DONE
 
 SEQUENCE(20)
+
 AT(22)  // if you remove this line the code will loop from startup until arduino is switched off
+
 DELAYRANDOM(1000,20000)
+
 FWD(60)
+
 AT(42)
+
 STOP
+
 DELAY(15000)
+
 REV(50)
+
 AT(41)
+
 STOP
+
 FOLLOW(20)
 
 
