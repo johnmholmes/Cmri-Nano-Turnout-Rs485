@@ -1,9 +1,9 @@
 Steps to run a locomotive address 4 between 2 sensors on the track forward sensor at pin 42 and reverse sensor at pi 41
 We also have a switch on pin 22 to start this to only run 1 time
 
-1. You need to add a file called myAutomation.h
+1. upload the newversion of CommandStation_ex to your arduino and restart it
 
-2. add the following lines of code.
+2. Check out the myAutomation.h file you will also see the flicker led included the code below just controls the loco
 
 EXRAIL
 
