@@ -5,12 +5,17 @@ Steps to making the led flicker on pin 17 on a arduino mega with the latest vers
 2. add the following lines of code.
 
 EXRAIL
+
 START(917)
+
 DONE
 
 SEQUENCE(917)
+
 DELAYRANDOM(10,400) SET(17)
+
 DELAYRANDOM(10,400) RESET(17)
+
 FOLLOW(917)
 
 
