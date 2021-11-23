@@ -1,4 +1,4 @@
-# The unit i am using is only on test on my layout i would not suggest you use these until further testing has been done by myself or others who have used these units 
+# The unit i am using is only on test on my layout i would not suggest you use these until further testing have been done by myself or others who have used these units 
 
 
 # A group of various codes for use with a  model layout that uses Jmri and Cmri and Dcc++Ex
