@@ -1,7 +1,8 @@
 # The unit i am using is only on test on my layout i would not suggest you use these until further testing have been done by myself or others who have used these units 
 
 
-# A group of various codes for use with a  model layout that uses Jmri and Cmri and Dcc++Ex
+# A group of various codes for use with a  model layout that uses Jmri and Cmri and Dcc++Ex. These nodes can be used with a usb cable or with the module i use they are here for reference only to help you if you want to do something like it.
+
 When i first created this repository it was going to be for 1 peice of code for use on my layout 
 and for me to learn how to use github.
 
