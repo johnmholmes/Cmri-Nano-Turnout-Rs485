@@ -1,9 +1,9 @@
 /*pins 0 - 1 are usedfor Rx and Tx no trigger pin required due to using
   TTL to RS485 Module Serial Port MCU Automatic Flow Control Module.
-  i do not use pin 2 as it may be needed with 3 wire RS485 Units
+  
   simple servo cmri node which moves 1 servo and the sends back a bit back to jmri to indicate
   the servo has been moved
-  also will control 8 off signal leds
+  also will control 6 off signal leds
   it will also read 5 sensors/switchs
   Code uses some of Chris Sharps code to add slow motion servo.
 */
@@ -17,15 +17,16 @@
 #define turnout1ClosedPosition 70
 #define turnout1ThrownPosition 108
 
-// define signal leds turnout 1
-#define throughApproachGreenLed 4 //jmri 3002
-#define throughApproachRedLed 5
-#define divergingApproachGreenLed 6
-#define divergingApproachRedLed 7
-#define throughGreenLed 8
-#define throughRedLed 9
-#define divergingGreenLed 10
-#define divergingRedLed 11
+// define signal leds turnout 1 pins 0 and 1 rx & tx
+#define throughApproachGreenLed 2 //jmri 3002
+#define throughApproachRedLed 3
+#define divergingApproachGreenLed 4
+#define divergingApproachRedLed 5
+#define throughGreenLed 6
+#define throughRedLed 7
+
+// Spare pins at the moment 8 to 13 5 And A6 & A7 in total
+
 
 //define infrared detection peel
 #define Sensor1 A0  //jmri 3002
@@ -33,6 +34,7 @@
 #define Sensor3 A2
 #define Sensor4 A3
 #define Sensor5 A4
+#define Sensor6 A5
 
 //setup themove speed of servo
 #define turnoutMoveSpeed 20   // [ms] lower number is faster
@@ -57,8 +59,7 @@ void setup() {
   pinMode(divergingApproachRedLed, OUTPUT);
   pinMode(throughGreenLed, OUTPUT);
   pinMode(throughRedLed, OUTPUT);
-  pinMode(divergingGreenLed, OUTPUT);
-  pinMode(divergingRedLed, OUTPUT);
+
 
   //setup input pins
   pinMode(Sensor1, INPUT_PULLUP);
@@ -66,6 +67,8 @@ void setup() {
   pinMode(Sensor3, INPUT_PULLUP);
   pinMode(Sensor4, INPUT_PULLUP);
   pinMode(Sensor5, INPUT_PULLUP);
+  pinMode(Sensor6, INPUT_PULLUP);
+  
 
   digitalWrite(throughApproachGreenLed, LOW);  // light led 1 on start up  to show its working
   delay(2000);
@@ -99,8 +102,7 @@ void loop() {
   digitalWrite (divergingApproachRedLed, !cmri.get_bit(4)); 
   digitalWrite (throughGreenLed, !cmri.get_bit(5)); //SH3
   digitalWrite (throughRedLed, !cmri.get_bit(6)); //SH3
-  digitalWrite (divergingGreenLed, !cmri.get_bit(7)); //SH4
-  digitalWrite (divergingRedLed, !cmri.get_bit(8)); //SH4 jmri 3009
+
 
   // get senors status and send to jmri
   cmri.set_bit(1, !digitalRead(A0)); //jmri 3002
@@ -108,6 +110,7 @@ void loop() {
   cmri.set_bit(3, !digitalRead(A2));
   cmri.set_bit(4, !digitalRead(A3));
   cmri.set_bit(5, !digitalRead(A4));
+  cmri.set_bit(6, !digitalRead(A4));
 
   if (turnout1Position != turnout1Target) {
     if (millis() > turnoutMoveDelay) {
