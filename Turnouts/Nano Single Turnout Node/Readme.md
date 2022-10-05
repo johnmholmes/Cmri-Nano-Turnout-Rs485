@@ -1,4 +1,4 @@
-This node is  a simple node that will control 1 servo and 6 leds in JMRI and uses CMRI
+#This node is a simple node that will control 1 servo and 6 leds and also read 5 infra red sensors in JMRI and uses CMRI
 
 1 bits have been setup for turnout feed
 communication between jmri to the nano  use the bi-directional TTl to RS485 module.
