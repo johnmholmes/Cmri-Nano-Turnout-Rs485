@@ -85,7 +85,7 @@ void setup() {
   turnOut2.attach(3);
   turnOut2.write(turnout2ClosedPosition);
 
-  Serial.begin(9600);
+  Serial.begin(19200);
 }
 
 void loop() {
