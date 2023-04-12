@@ -14,8 +14,8 @@
 // define turnout required positions each turnout will need calibrating
 #define turnout1ClosedPosition 110
 #define turnout1ThrownPosition 77
-#define turnout2ClosedPosition 80
-#define turnout2ThrownPosition 112
+#define turnout2ClosedPosition 110
+#define turnout2ThrownPosition 35
 
 // define signal leds turnout 3 and 4
 #define throughGreenLed 4
